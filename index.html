@@ -12,17 +12,17 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house-chimney"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
-                <!--<i class="fa-solid fa-sun"></i>-->
+                <li><a href="#ficha" class="link"><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class="link"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+                <li><a href="#" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+
         <section id="ficha">
             <img src="uploads/perfil.jpg" alt="João" class="foto">
             <h1>João Vitor de Jesus</h1>
@@ -36,11 +36,185 @@
         
         <section id="detalhes">
 
+            <article id="skills">
+                <h2><i class="fa-solid fa-brain"></i> Minhas Skills</h2>
+
+                <div id="skill-container">
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                               <i class="fa-solid fa-code"></i> HTML5 
+                            </span>
+                            <span class="porcent">
+                                75%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 75%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                               <i class="fa-solid fa-code"></i> CSS 
+                            </span>
+                            <span class="porcent">
+                                65%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 65%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                               <i class="fa-solid fa-code"></i> JavaScript 
+                            </span>
+                            <span class="porcent">
+                                40%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 40%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                               <i class="fa-solid fa-code"></i> Python 
+                            </span>
+                            <span class="porcent">
+                                40%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 40%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-user-check"></i> Organização
+                            </span>
+                            <span class="porcent">
+                                95%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 95%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-user-check"></i> Trabalho em equipe
+                            </span>
+                            <span class="porcent">
+                                80%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-user-check"></i> Comunicação
+                            </span>
+                            <span class="porcent">
+                                65%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 55%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article> <!--Fim article-skills-->
+
+            <article id="formacao">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
+
+                <div id="formacao-container">
+                    <div class="curso">
+                        <p class="periodo">2017 - 2019</p>
+                        <h3 class="instituicao">E. E. Aurora Scodro Groff</h3>
+                        <p class="titulacao">Ensino Médio</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2025 - 2029 (previsão de conclusão)</p>
+                        <h3 class="instituicao">Unimax Indaiatuba</h3>
+                        <p class="titulacao">Bacharelado em Ciência da Computação</p>
+                    </div>
+                </div>
+
+            </article> <!--Fim article-formacao-->
+
+            <article id="projetos">
+                <h2><i class="fa-solid fa-trowel-bricks"></i> Meus Projetos</h2>
+
+                <div id="projeto-container">
+
+                    <div class="projeto">
+                        <img src="uploads/petinder.png" alt="Petinder" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2026</p>
+                            <h3 class="titulo">Petinder</h3>
+                            <p>Aplicativo web para matching entre pets!</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>O PeTinder é uma plataforma web de matchmaking para pets, desenvolvida com Python, Flask e SQLite. Funciona como o Tinder: o tutor cadastra seu animal com fotos e filtros como raça, gênero e pedigree, navega por candidatos da mesma cidade e espécie, e quando dois tutores dão like um no pet do outro ocorre um match — ambos são notificados com o contato do outro tutor.
+                                O projeto segue arquitetura MVC em camadas, com sistema de planos Free e Premium, painel administrativo, notificações em tempo real e autenticação segura com hash bcrypt.
+                                Tecnologias: Python, Flask, SQLite, SQLAlchemy, Bootstrap 5, Jinja2.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto">
+                        <img src="uploads/biblioteca2.0.png" alt="Biblioteca 2.0" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2026</p>
+                            <h3 class="titulo">Biblioteca 2.0</h3>
+                            <p>Sistema de Gerenciamento de Biblioteca!</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Sistema web de gerenciamento de biblioteca desenvolvido com Flask e MySQL. A aplicação segue a arquitetura em três camadas e oferece tanto uma API REST quanto uma interface visual para cadastro e controle de usuários, livros e empréstimos. Utiliza SQLAlchemy como ORM, Flask-Migrate para versionamento do banco de dados e Blueprints para organização modular das rotas.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </article> <!--Fim article-projetos-->
         </section>
     </main>
 
     <footer>
-
+        Portfólio desenvolvido em 2026
     </footer>
 
     <script src="scripts/script.js"></script>
